@@ -1,0 +1,19 @@
+{
+  "Index": {
+    "logo": "Fullstendig web utvikling",
+    "bio": "Oppvokst i Telemark som den yngste av fire søsken. I begynnelsen av tjueårene flyttet jeg til Oslo, hvor jeg har tilbragt mesteparten av mitt voksne liv. Jeg er født i 1985 er nå 38 år gammel, singel uten egen familie.Når det gjelder karrieren min, har jeg erfaring innenfor byggearbeid og jernbane. I 2021 begynte jeg på 2-årig front-end-utvikling ved Noroff. Siden den gang har jeg viet tiden min til å bygge opp porteføljen min og skaffe praktisk erfaring med kipara.no.Jeg søker nå etter mitt første profesjonelle jobb som utvikler, og jeg håper at den som leser dette er nettopp den som gir meg muligheten.",
+    "experience": "Erfaring med :",
+    "menuProjects": "Dev projekt",
+    "menuArt": "Kunst",
+    "menuIdeas": "Andre prosjekt",
+    "menuContact": "Kontakt",
+    "header1": "Prosjekt",
+    "project1Header": "Titanium Gear webshop med WooCommerce, Next.js og Sanity CMS",
+    "project1Text": "Titanium Gear webshop er bygd med Next.js og WooCommmerce til e-handelsystem og Sanity CMS for innholdsbehandling. Webshoppen er fullt ut responsiv og har et ryddig og moderne utseende, men du kan selvfølgelig se og dømme selv!",
+    "project2Header": "Kipara webshop med WooCommerce, Next.js og Sanity CMS",
+    "project2Text": "Kipara webshop er bygget is Next.js. vi bruker WooCommmerce som e-handelsystem and Sanity CMS for innholdsbehandling. Kipara solgt packrafts i 5 år og har oppnåd gode salgsresultater i Norge og Sverige. Daglig leder og eier ønsker å bedre merkevaren med en ny og forebdret nettside. Webshoppen er fullt ut responsiv og har et ryddig og moderne utseende , men du kan selvfølgelig se og dømme selv!",
+    "commingSoonText": "Kommer snart",
+    "header2": "Kunst",
+    "header3": "Andre prosjekt"
+  }
+}

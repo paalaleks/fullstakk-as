@@ -8,10 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        foreground: "#FDC675",
+        foreground_2: "#E5CA9B",
+        background: "#4a121c",
+        backgroundShade: "#430d16",
+        backgroundShade_2: "#341A1A",
+        backgroundShade_3: "#390d15",
+        accent: "#6b1927",
+        accent_2: "#725e61",
+      },
+      fontFamily: {
+        flyover: ["Flyover", "sans-serif"],
       },
     },
   },

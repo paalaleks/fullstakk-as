@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-foreground: #fdc675;
+  --color-foreground_2: #e5ca9b;
+  --color-background: #4a121c;
+  --color-background-shade: #430d16;
+  --color-background-shade_2: #341a1a;
+  --color-background-shade_3: #390d15;
+  --color-accent: #6b1927;
+  --color-accent_2: #725e61;
+}
+
+@font-face {
+  font-family: "Flyover";
+  src: url("./fonts/FLYOVER.TTF") format("truetype");
+  font-style: normal;
+}
+
+@layer base {
+  h2 {
+    @apply text-[2rem] leading-[2.25rem] text-foreground;
+    font-family: "Flyover", sans-serif;
+  }
+  h3 {
+    @apply text-[1.5rem] leading-[1.75rem] text-foreground;
+    font-family: "Flyover", sans-serif;
+  }
+  h4 {
+    @apply text-foreground text-xl;
+    font-family: "Flyover", sans-serif;
+  }
+  p {
+    @apply leading-relaxed;
+  }
+}
