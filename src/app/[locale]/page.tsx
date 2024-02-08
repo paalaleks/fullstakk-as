@@ -22,7 +22,7 @@ export default async function Home({ params }: HomeProps) {
         className="absolute -top-32 -left-32 z-0 mix-blend-multiply"
       />
       <ProjectList />
-      <ArtList />
+      <ArtList locale={params.locale} />
       <OtherProjectList />
     </>
   );

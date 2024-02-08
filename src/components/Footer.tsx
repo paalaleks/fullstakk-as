@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-backgroundShade_3 absolute z-10 left-0 right-0 bottom-0 w-full p-4">
+    <footer className="bg-backgroundShade_3 absolute z-10 left-0 right-0 bottom-0 w-full p-4 ">
       <div className="flex justify-center items-center h-full flex-wrap space-x-4  text-sm">
         <p className="p-1 select-none">© 2024 Fullstakk AS</p>
         <Link href="tel:+4748347323" className="items-center flex p-1">

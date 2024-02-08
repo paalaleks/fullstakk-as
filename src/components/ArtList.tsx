@@ -2,60 +2,64 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-export default async function ArtList() {
+interface ArtListProps {
+  locale: string;
+}
+
+export default async function ArtList({ locale }: ArtListProps) {
   const t = await getTranslations("Index");
   const images = [
     {
-      url: "/artwork_airbaloon.png",
+      url: "artwork_airbaloon.png",
       alt: "Luft ballong",
       width: 1528,
       height: 2095,
     },
     {
-      url: "/artwork_Prøvelser.png",
+      url: "artwork_Prøvelser.png",
       alt: "Prøvelser",
       width: 1528,
       height: 1047.5,
     },
     {
-      url: "/artwork_Ungløve_2.png",
+      url: "artwork_Ungløve_2.png",
       alt: "Ung løve",
       width: 1528,
       height: 1047.5,
     },
 
     {
-      url: "/artwork_detmågåfremmover.png",
+      url: "artwork_detmågåfremmover.png",
       alt: "Det må gå fremmover",
       width: 1528,
       height: 1047.5,
     },
     {
-      url: "/artwork_little_delights.png",
+      url: "artwork_little_delights.png",
       alt: "Små gleder",
       width: 1528,
       height: 1047.5,
     },
     {
-      url: "/artwork_Ikke_Langt_Borte.png",
+      url: "artwork_Ikke_Langt_Borte.png",
       alt: "Ikke langt borte",
       width: 1528,
       height: 2095,
     },
     {
-      url: "/artwork_The_Pearl.png",
+      url: "artwork_The_Pearl.png",
       alt: "Perlen",
       width: 1528,
       height: 2095,
     },
     {
-      url: "/artwork_Study_4.png",
+      url: "artwork_Study_4.png",
       alt: "Dype studier",
       width: 1528,
       height: 1047.5,
     },
     {
-      url: "/artwork_hund_og_meg.png",
+      url: "artwork_hund_og_meg.png",
       alt: "Hund og meg",
       width: 1528,
       height: 1047.5,
@@ -70,7 +74,7 @@ export default async function ArtList() {
         {images.map((image) => {
           return (
             <Link
-              href={``}
+              href={`${locale}/art/w=${image.width}h=${image.height}img=${image.url}`}
               key={image.url}
               className={`${image.height > image.width ? "row-span-2" : ""}`}
             >
@@ -78,7 +82,7 @@ export default async function ArtList() {
                 width={image.width}
                 height={image.height}
                 className={`transition duration-300 ease-in-out hover:brightness-110 object-cover h-full`}
-                src={image.url}
+                src={`/${image.url}`}
                 alt={image.alt}
               />
             </Link>

@@ -34,15 +34,9 @@ export default async function ProjectList() {
   ];
 
   return (
-    <section className="min-h-screen" id="projects">
+    <section className="min-h-screen relative" id="projects">
       <h2 className="relative z-10 text-center pt-12 mb-14">{t("header1")}</h2>
-      <Image
-        src="/assets/flower_2.svg"
-        alt="Hero image"
-        width={430}
-        height={277}
-        className="absolute top-[400xp] right-0 -z-10 mix-blend-multiply"
-      />
+
       <div className="grid grid-cols-1 min-[590px]:grid-cols-2 gap-6">
         {projects.map((project) => (
           <article key={project._id} className="max-w-xl w-full h-min relative">
@@ -70,6 +64,13 @@ export default async function ProjectList() {
           </article>
         ))}
       </div>
+      <Image
+        src="/assets/flower_2.svg"
+        alt="Hero image"
+        width={430}
+        height={277}
+        className="absolute -bottom-24 right-0 -z-10 mix-blend-multiply"
+      />
     </section>
   );
 }

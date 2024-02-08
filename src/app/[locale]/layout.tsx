@@ -18,7 +18,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale}>
       <body className="bg-background text-foreground_2 relative min-h-screen overflow-x-hidden scroll-smooth">
-        <div className="max-w-3xl mx-auto pb-14 min-h-screen px-8">
+        <div className="max-w-3xl mx-auto pb-56 min-h-screen px-8">
           {children}
         </div>
         <Footer />
