@@ -29,7 +29,6 @@
     font-family: "Flyover", sans-serif;
   }
   h4 {
-    @apply text-foreground text-xl;
     font-family: "Flyover", sans-serif;
   }
   p {

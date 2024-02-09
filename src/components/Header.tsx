@@ -13,9 +13,9 @@ export default async function Header({ locale }: NavbarProps) {
   return (
     <header className="relative z-10 min-h-screen grid grid-flow-row">
       <nav className="h-12 flex items-center justify-between my-6">
-        <h4 className=" flex flex-wrap ">
-          <span className="mr-1">Fullstakk AS </span>
-          <span className="hidden min-[387px]:block"> – {t("logo")}</span>
+        <h4 className=" flex items-center flex-wrap text-foreground text-xl">
+          <span>Fullstakk AS</span>
+          <span className="font-mono text-sm pl-2">ctrl+alt+webdev</span>
         </h4>
         <Navbar locale={locale} />
       </nav>

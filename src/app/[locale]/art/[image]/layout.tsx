@@ -9,11 +9,11 @@ export default function Layout({
   params: { locale: string };
 }) {
   return (
-    <>
-      <Link href={`/#art`} className="flex justify-end py-8">
+    <div>
+      <Link href={`/#art`} className="flex justify-end pt-8">
         <X size={20} className="" />
       </Link>
       {children}
-    </>
+    </div>
   );
 }

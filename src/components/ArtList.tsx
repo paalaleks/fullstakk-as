@@ -68,13 +68,13 @@ export default async function ArtList({ locale }: ArtListProps) {
 
   return (
     <div className="min-h-screen" id="art">
-      <h2 className="relative z-10 text-center pt-12 mb-14">{t("header2")}</h2>
-
+      <h2 className="relative z-10 text-center mt-12">{t("header2")}</h2>
+      <p className="my-12">{t("artDescription")}</p>
       <div className="grid grid-cols-2 sm:grid-cols-3 group mb-32 shadow-xl">
         {images.map((image) => {
           return (
             <Link
-              href={`${locale}/art/w=${image.width}h=${image.height}img=${image.url}`}
+              href={`${locale}/art/${image.width}x${image.height}img=${image.url}`}
               key={image.url}
               className={`${image.height > image.width ? "row-span-2" : ""}`}
             >

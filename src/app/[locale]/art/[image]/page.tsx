@@ -6,18 +6,15 @@ export default function page({
   params: { locale: string; image: string };
 }) {
   const parseImageParam = (imageParam: string) => {
-    // First, decode the URI component to handle encoded characters
     const decodedImageParam = decodeURIComponent(imageParam);
 
-    // Use a more specific pattern to extract the width, height, and img
-    const widthMatch = decodedImageParam.match(/w=(\d+)/);
-    const heightMatch = decodedImageParam.match(/h=(\d+)/);
-    const imgMatch = decodedImageParam.match(/img=(.+)/);
+    const [size, img] = decodedImageParam.split("img=");
+    const [width, height] = size.split("x");
 
     return {
-      width: widthMatch ? widthMatch[1] : null,
-      height: heightMatch ? heightMatch[1] : null,
-      img: imgMatch ? imgMatch[1] : null,
+      width,
+      height,
+      img,
     };
   };
 
@@ -30,7 +27,7 @@ export default function page({
       alt={img || ""}
       width={parseInt(width || "0")}
       height={parseInt(height || "0")}
-      className="relative z-20 max-h-screen py-10 h-full object-contain"
+      className="relative z-20 mt-8 object-contain shadow-xl"
     />
   );
 }

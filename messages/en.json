@@ -1,6 +1,5 @@
 {
   "Index": {
-    "logo": "Complete web development",
     "bio": "Grew up in Telemark as the youngest of four siblings. In the early twenties, I moved to Oslo, where I have spent the majority of my adult life. I was born in 1985 and am now 38 years old, single without my own family. As for my career, I have experience in construction work and railways. In 2021, I started a 2-year front-end development program at Noroff. Since then, I have devoted my time to building up my portfolio and gaining practical experience with kipara.no. I am now looking for my first professional job as a developer, and I hope that the person reading this is just the one to give me the opportunity.",
     "experience": "Experience with :",
     "menuProjects": "Dev projects",
@@ -14,6 +13,7 @@
     "project2Text": "Kipara webshop is built with Next.js. We use WooCommmerce for ecommerce and Sanity CMS for content management. Kipara has been in buisness for 5 years and is a well known brand in Norway. They are looking to improve their branding and webshop. The webshop is fully responsive and has a clean and modern look, but of course you can judge yourself!",
     "commingSoonText": "Coming soon",
     "header2": "Art",
+    "artDescription": "Making art has been an interest of mine my whole life, although it's been something I've done certain periods, I always feel pleasure when returning to drawing again.",
     "header3": "Other prjects"
   }
 }
