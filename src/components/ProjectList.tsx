@@ -2,6 +2,8 @@ import { getTranslations } from "next-intl/server";
 
 import Link from "next/link";
 import Image from "next/image";
+import Titaniumgear from "../../public/project-titaniumgear.png";
+import Bookokay from "../../public/bookokay.png";
 
 export default async function ProjectList() {
   const t = await getTranslations("Index");
@@ -10,22 +12,18 @@ export default async function ProjectList() {
     {
       _id: "1",
       url: "https://www.titaniumgear.no",
-      image: "/project-titaniumgear.png",
+      image: Titaniumgear,
       alt: "Titanium Gear",
-      width: 430,
-      height: 277,
       header: t("project1Header"),
       text: t("project1Text"),
-      comingSoon: true,
+      comingSoon: false,
       commingSoonText: t("commingSoonText"),
     },
     {
       _id: "1",
-      url: "https://www.kipara.no",
-      image: "/project-kipara.png",
-      alt: "Kipara",
-      width: 430,
-      height: 277,
+      url: "https://www.bookokay.app",
+      image: Bookokay,
+      alt: "Book okay",
       header: t("project2Header"),
       text: t("project2Text"),
       comingSoon: true,
@@ -48,9 +46,7 @@ export default async function ProjectList() {
             <Image
               src={project.image}
               alt={project.alt}
-              width={320}
-              height={100}
-              className="rounded-xl w-full border-2 border-backgroundShade"
+              className="object-contain rounded-xl w-full bg-[#1a1816]"
             />
 
             <h3 className="pt-3">{project.header}</h3>

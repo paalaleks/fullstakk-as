@@ -50,7 +50,7 @@ export default function Navbar({ locale }: NavbarProps) {
             ></span>
           </Menu.Button>
           <Menu.Items className="absolute z-20 right-0 mt-6 w-56 origin-top-right rounded-xl bg-backgroundShade_3 shadow-lg focus:outline-none space-y-2 pb-4 px-4 border-2 border-backgroundShade">
-            <Menu.Item as="div" className="my-4 ">
+            <Menu.Item as="div" className="mt-4 ">
               {locale === "no" ? (
                 <Link
                   className={` text-center items-center px-2 py-1 flex hover:text-foreground`}
